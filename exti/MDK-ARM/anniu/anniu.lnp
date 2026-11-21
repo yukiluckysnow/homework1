@@ -1,0 +1,21 @@
+--cpu Cortex-M3
+"anniu\startup_stm32f103xb.o"
+"anniu\main.o"
+"anniu\stm32f1xx_it.o"
+"anniu\stm32f1xx_hal_msp.o"
+"anniu\stm32f1xx_hal_gpio_ex.o"
+"anniu\stm32f1xx_hal.o"
+"anniu\stm32f1xx_hal_rcc.o"
+"anniu\stm32f1xx_hal_rcc_ex.o"
+"anniu\stm32f1xx_hal_gpio.o"
+"anniu\stm32f1xx_hal_dma.o"
+"anniu\stm32f1xx_hal_cortex.o"
+"anniu\stm32f1xx_hal_pwr.o"
+"anniu\stm32f1xx_hal_flash.o"
+"anniu\stm32f1xx_hal_flash_ex.o"
+"anniu\stm32f1xx_hal_exti.o"
+"anniu\system_stm32f1xx.o"
+--strict --scatter "anniu\anniu.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "anniu.map" -o anniu\anniu.axf
